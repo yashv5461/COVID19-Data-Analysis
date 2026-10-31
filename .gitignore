@@ -1,0 +1,5 @@
+# Raw OWID download (~98 MB) - recreated by src/prepare_data.py
+data/raw/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store

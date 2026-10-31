@@ -1,0 +1,9 @@
+column_name,data_type,sample_value_1,sample_value_2,sample_value_3,nullable,description
+date,date (YYYY-MM-DD),2021-05-09,2021-05-09,2021-05-09,No,"Reporting date. Daily rows from 2020-01-05 to 2024-08-04; WHO-sourced totals are updated once a week (Sundays), so values stay the same between updates."
+country,string (categorical),India,United States,Brazil,No,Country or territory name as used by Our World in Data (234 countries/territories). Regional and income-group aggregates such as World and Europe were removed.
+confirmed,integer (count),22296414,32342152,15082449,No,Cumulative number of laboratory-confirmed COVID-19 cases reported up to this date (OWID total_cases). Daily new cases = difference from the previous row of the same country.
+deaths,integer (count),242362,580028,419114,No,Cumulative number of deaths attributed to COVID-19 reported up to this date (OWID total_deaths).
+recovered,"integer (count, estimated)",16717810,31131393,13817964,No,"ESTIMATED cumulative recoveries: confirmed cases 14 days earlier minus deaths to date (minimum 0). OWID/WHO do not publish recoveries, so this column is derived and should not be treated as an official figure."
+vaccinated,integer (count),133854676,158745361,35318058,Yes,Cumulative number of people who received at least one vaccine dose (OWID people_vaccinated). Last reported value carried forward; 0 before the country's first report; empty for 21 territories that never reported (about 9% of rows).
+population,integer (count),1417173120,338289856,215313504,No,"Population of the country used by OWID (UN World Population Prospects, 2022 estimate). Constant for each country and used for per-million and percentage calculations."
+continent,string (categorical),Asia,North America,South America,No,"Continent of the country: Africa, Asia, Europe, North America, Oceania or South America. Constant for each country."

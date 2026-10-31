@@ -1,0 +1,6 @@
+step,rows,countries
+1. Raw OWID file,429435,255
+2. Remove regional / income aggregates,396985,238
+3. Remove rows before reporting began,391716,234
+4. Remove duplicate country-date rows,391716,234
+"5-7. Fill vaccinated, estimate recovered, rename columns",391716,234
